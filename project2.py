@@ -6,33 +6,33 @@ from skfuzzy import control as ctrl
 
 # Data
 data = {
-    "Kategori": ["Nongkrong"] * 7 + ["Nugas"] * 5 + ["Restoran"] * 4 + ["Ramah Kantong"] * 7,
+    "Kategori": ["Nongkrong"] * 10 + ["Nugas"] * 5 + ["Restoran"] * 6 + ["Ramah Kantong"] * 7,
     "Nama Tempat": [
-        "Perwira Kopi", "RP Coffee", "Warmindo Well", "Kaze HQ", "Sadane Coffee", "Vion Coffee", "Yugata Coffee",
-        "Kaze HQ", "Yarra", "Its Brewme", "Ammo Coffee", "Hallo Burjois",
-        "Umm A Yummy", "Cafe Loco", "Pasta Kangen Karawang", "Wardes",
-        "Sego Pedes Basman", "Soto Segerrr & Frozen", "Bubur & Soto Ayam Depan UNSIKA", "Mie Mukidi",
-        "Warteg Putra", "Warteg Risky", "Warteg Kebumen"
+    "Perwira Kopi", "RP Coffee", "Warmindo Well", "Kaze HQ", "Sadane Coffee", "Vion Coffee", "Yugata Coffee", "Warkop Pancong Lumer", "Talk Coffee Industri", "Kisah Lama Kopi",
+    "Kaze HQ", "Yarra", "Its Brewme", "Ammo Coffee", "Hallo Burjois",
+    "Umm A Yummy", "Cafe Loco", "Pasta Kangen Karawang", "Wardes", "Bebek Kaleyo Galuh Mas", "Riz Cafe dan Resto",
+    "Sego Pedes Basman", "Soto Segerrr & Frozen", "Bubur & Soto Ayam Depan UNSIKA", "Mie Mukidi",
+    "Warteg Putra", "Warteg Risky", "Warteg Kebumen"
     ],
-    "Harga": [16547, 19350, 6756, 26283, 16966, 33120, 22037,
-              26283, 25934, 15297, 20000, 22868,
-              16510, 57255, 13798, 26247,
+    "Harga": [16547, 19350, 6756, 26283, 16966, 33120, 22037, 7711, 25549, 15684,
+              26283, 25934, 15297, 20000, 22868, 13245, 12666,
+              16510, 57255, 13798, 26247, 
               6549, 8363, 5312, 9116, 6567, 5234, 5786],
-    "Waktu": [1, 4, 1, 1, 6, 2, 4,
+    "Waktu": [1, 4, 1, 1, 6, 2, 4, 1, 8, 8,
               1, 3, 4, 1, 4,
-              1, 1, 3, 3,
+              1, 1, 3, 3, 10, 10,
               1, 1, 1, 2, 1, 1, 1],
-    "Suasana": [3, 3, 3, 5, 4, 4, 4,
+    "Suasana": [3, 3, 3, 5, 4, 4, 4, 1, 4, 2,
                 5, 4, 5, 3, 5,
-                3, 3, 2, 3,
+                3, 3, 2, 3, 5, 4,
                 2, 3, 3, 2, 2, 2, 2],
-    "Kenyamanan": [3, 4, 3, 5, 4, 4, 4,
+    "Kenyamanan": [3, 4, 3, 5, 4, 4, 4, 2, 4, 3,
                    5, 5, 5, 3, 5,
-                   4, 3, 2, 3,
+                   4, 3, 2, 3, 5, 4,
                    2, 2, 3, 2, 3, 3, 3],
-    "Fasilitas": [4, 3, 3, 5, 3, 4, 3,
+    "Fasilitas": [4, 3, 3, 5, 3, 4, 3, 3, 4, 3,
                   5, 5, 4, 3, 4,
-                  4, 2, 2, 4,
+                  4, 2, 2, 4, 5, 5,
                   2, 2, 2, 2, 3, 3, 3]
 }
 df = pd.DataFrame(data)
